@@ -1,0 +1,104 @@
+{
+  "id": "aboutme",
+  "style": {
+    "background": "linear-gradient(180deg, rgba(15, 17, 23, 0.85) 0%, rgba(15, 17, 23, 0) 30%, rgba(15, 17, 23, 0) 70%, rgba(15, 17, 23, 0.85) 100%), url('IMG/blueprint.jpg') center/cover no-repeat",
+    "padding": "110px 20px 140px 20px",
+    "minHeight": "96vh",
+    "maxWidth": "1400px",
+    "googleFont": "Cinzel",
+    "fontFamily": "'Cinzel', serif"
+  },
+  "layout": {
+    "direction": "row",
+    "alignItems": "center",
+    "justifyContent": "space-between",
+    "gap": "60px",
+    "textAlign": "left"
+  },
+  "header": {
+    "title": "Hey ya, travelers.",
+    "titleColor": "#ffffff",
+    "titleSize": "9.0rem",
+    "titleWeight": "500"
+  },
+  "content": [
+    {
+      "html": "Welcome to my workshop! I'm <b>Drayn</b> - an indie game developer and artist (or just some sleepy fox).",
+      "textColor": "#e2e8f0",
+      "fontSize": "1.35rem",
+      "lineHeight": "1.6"
+    },
+    {
+      "html": "Here you'll find my projects and some more things.",
+      "textColor": "#cbd5e1",
+      "fontSize": "1.1rem",
+      "lineHeight": "1.7"
+    }
+  ],
+  "speechBubble": {
+    "image": "IMG/textbox-dialogue2.png",
+    "text": "Lost? Lemme show you around the workshop ^^",
+    "maxWidth": "420px",
+    "googleFont": "El Messiri",
+    "fontFamily": "'El Messiri', serif",
+    "paddingLeft": "30px"
+  },
+  "buttons": {
+    "label": "YOU CAN ME FIND IN",
+    "labelColor": "#FFFFFF",
+    "labelFontSize": "0.85rem",
+    "labelLetterSpacing": "2px",
+    "overlay": true,
+    "items": [
+      {
+        "ariaLabel": "YouTube",
+        "icon": "fab fa-youtube",
+        "url": "https://www.youtube.com/@DraynDev",
+        "className": "social-btn"
+      },
+      {
+        "ariaLabel": "Itch.io",
+        "icon": "fab fa-itch-io",
+        "url": "https://the-drayn.itch.io/",
+        "className": "social-btn"
+      },
+      {
+        "ariaLabel": "Twitter / X",
+        "icon": "fab fa-twitter",
+        "url": "https://x.com/thedrayndev",
+        "className": "social-btn"
+      },
+      {
+        "ariaLabel": "Reddit",
+        "icon": "fab fa-reddit",
+        "url": "https://www.reddit.com/user/DraynHGames",
+        "className": "social-btn"
+      },
+      {
+        "ariaLabel": "Steam",
+        "icon": "fab fa-steam",
+        "url": "https://steamcommunity.com/id/drayndev",
+        "className": "social-btn"
+      },
+      {
+        "ariaLabel": "Telegram",
+        "icon": "fab fa-telegram-plane",
+        "url": "https://t.me/drayns_campfire",
+        "className": "social-btn"
+      },
+      {
+        "ariaLabel": "Discord",
+        "icon": "fab fa-discord",
+        "url": "https://discord.gg/bPHuW7f7MJ",
+        "className": "social-btn"
+      }
+    ]
+  },
+  "media": {
+    "type": "image",
+    "url": "IMG/sleepyassnobg.png",
+    "alt": "Drayn Character",
+    "borderRadius": "0px",
+    "maxWidth": "640px"
+  }
+}

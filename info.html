@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Подключение шрифта Cinzel -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .bg-tiles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      background-color: #061426;
+      background-image: url('IMG/blueprint.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: 'Cinzel', serif;
+      padding: 110px 0 40px 0;
+      overflow-x: hidden;
+      color: #e0f2fe;
+    }
+
+
+    .top-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 76px;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      overflow: hidden;
+      background-image: url('IMG/HEADER.png');
+      background-size: cover;
+      background-position: center 35%;
+      border-bottom: 4px solid #4a2d23;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    }
+
+    .top-nav::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 10, 8, 0.65);
+      z-index: 0;
+    }
+
+    .nav-logo {
+      position: relative;
+      z-index: 1;
+      height: 42px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.6));
+      transition: transform 0.2s ease;
+    }
+
+    .nav-logo:hover {
+      transform: scale(1.05) rotate(-2deg);
+    }
+
+    .top-nav-inner {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-width: 130px;
+      padding: 16px 36px;
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      white-space: nowrap;
+      color: #fde3cc;
+      text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.9);
+      background-image: url('IMG/textbox2.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.15s ease;
+    }
+
+    .nav-btn:hover {
+      transform: translateY(-2px) scale(1.05);
+      filter: brightness(1.2);
+    }
+
+    .nav-btn:active {
+      transform: translateY(1px) scale(0.98);
+    }
+
+
+    .card {
+    }
+
+
+    .card::before, .card::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: repeating-linear-gradient(90deg, #38bdf8 0, #38bdf8 6px, transparent 6px, transparent 12px);
+      opacity: 0.6;
+    }
+    .card::before { top: 6px; }
+    .card::after { bottom: 6px; }
+
+    .card-content {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .card h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 5.2rem;
+      font-weight: 300;
+      margin-bottom: 18px;
+      color: #ffffff;
+      letter-spacing: 1px;
+    }
+
+    .card p {
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.65;
+      margin-bottom: 16px;
+      color: #bae6fd;
+      text-shadow: 0 6px 18px rgba(0, 0, 0, 6.5);
+    }
+
+    .card p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .social-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      background: rgba(14, 116, 144);
+      color: #38bdf8;
+      border-radius: 100px;
+      font-size: 1.45rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      position: relative;
+      top: 0;
+    }
+
+    .social-btn:hover {
+      background: #0284c7;
+      color: #ffffff;
+      border-color: #7dd3fc;
+      top: -3px;
+      transform: scale(1.05);
+    }
+
+    .social-btn:active {
+      top: 1px;
+      transform: scale(0.97);
+    }
+
+    .social-btn[aria-label="YouTube"]:hover { color: #ffffff; background: #e63946; border-color: #ff4e4e; }
+    .social-btn[aria-label="Itch.io"]:hover { color: #ffffff; background: #fa233b; border-color: #ff5f7e; }
+    .social-btn[aria-label="Twitter / X"]:hover { color: #ffffff; background: #0284c7; border-color: #71c9ff; }
+    .social-btn[aria-label="Reddit"]:hover { color: #ffffff; background: #ff4500; border-color: #ff7336; }
+    .social-btn[aria-label="Steam"]:hover { color: #ffffff; background: #1b2838; border-color: #66c0f4; }
+    .social-btn[aria-label="Telegram"]:hover { color: #ffffff; background: #0088cc; border-color: #38b3ff; }
+    .social-btn[aria-label="Discord"]:hover { color: #ffffff; background: #5865f2; border-color: #8c9eff; }
+
+    @media (max-width: 768px) {
+      .top-nav {
+        height: 66px;
+        padding: 0 16px;
+      }
+      body {
+        padding-top: 92px;
+      }
+      .nav-logo {
+        height: 34px;
+      }
+      .nav-btn {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+        min-width: 110px;
+      }
+      .card {
+        padding: 28px 16px;
+      }
+      .card h1 {
+        font-size: 1.75rem;
+      }
+      .social-btn {
+        width: 46px;
+        height: 46px;
+        font-size: 1.25rem;
+        border-radius: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-tiles" id="bg-tiles"></div>
+
+  <nav class="top-nav">
+    <img src="IMG/logoTDD.png" alt="Drayn's Workshop" class="nav-logo">
+    <div class="top-nav-inner" id="top-nav-inner"></div>
+  </nav>
+
+  <div class="card">
+    <div class="card-content">
+      <h1>Hi! I'm Drayn.</h1>
+      <p>Artist and developer... But you can just call me a sleeping fox.. ^^"</p>
+      <p>On my social media, YouTube, as well as Discord and Telegram, I'll be posting devlogs of my games, as well as artwork that I create from time to time.</p>
+      <p>My journey in this started back in 2018, and I still haven't lost my enthusiasm for all of this..</p>
+      <p>Currently, I work on all my projects completely solo, but I'd be more than happy to be part of a team in the future or collaborate with any of you.</p>
+      <p>You can contact me via Discord, Telegram, or email (for promos/sponsorships, commissions, or just to chat).</p>
+      <p>Hope to see you again soon..</p>
+
+      <div class="social-links" id="social-container">
+        <a href="https://www.youtube.com/@DraynDev" class="social-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://the-drayn.itch.io/" class="social-btn" aria-label="Itch.io" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-itch-io"></i>
+        </a>
+        <a href="https://x.com/thedrayndev" class="social-btn" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.reddit.com/user/DraynHGames" class="social-btn" aria-label="Reddit" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-reddit"></i>
+        </a>
+        <a href="https://steamcommunity.com/id/drayndev" class="social-btn" aria-label="Steam" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-steam"></i>
+        </a>
+        <a href="https://t.me/drayns_campfire" class="social-btn" aria-label="Telegram" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a href="https://discord.gg/bPHuW7f7MJ" class="social-btn" aria-label="Discord" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-discord"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="nav-config.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const bgTiles = document.getElementById('bg-tiles');
+      if (bgTiles) {
+        bgTiles.style.backgroundImage = "url('IMG/blueprint.jpg')";
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "id": "ghostly",
+  "style": {
+    "googleFont": "Vast Shadow",
+    "fontFamily": "'Vast Shadow', monospace",
+    "background": " url('IMG/BG-ghostly.jpg') center/cover no-repeat",
+    "padding": "60px 20px",
+    "minHeight": "450px",
+    "maxWidth": "1100px"
+  },
+  "header": {
+    "title": "GHOSTLY",
+    "titleColor": "#ffffff",
+    "titleSize": "8.8rem",
+    "titleWeight": "600",
+    "textShadow": "0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 255, 255, 0.2)"
+  },
+  "layout": {
+    "direction": "row",
+    "alignItems": "center",
+    "justifyContent": "space-between",
+    "gap": "40px",
+    "textAlign": "center"
+  },
+  "tags": [
+    { 
+      "text": "A 1920s style cartoon platformer.", 
+      "bg": "rgba(0, 0, 0, 1)",
+      "color": "#efcdee",
+      "fontSize": "0.85rem"
+    }
+  ],
+  "buttons": {
+    "overlay": false,
+    "label": "Available on:",
+    "labelColor": "#ffffff",
+    "labelFontSize": "1.1rem",
+    "labelTextShadow": "0 2px 6px rgba(0, 0, 0, 0.9)",
+    "items": [
+      {
+        "ariaLabel": "Itch io",
+        "icon": "fab fa-itch-io",
+        "url": "https://the-drayn.itch.io/ghostly",
+        "className": "social-btn"
+      }
+    ]
+  }
+}

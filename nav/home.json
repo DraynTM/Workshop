@@ -1,0 +1,7 @@
+{
+  "id": "nav-home",
+  "text": "Home",
+  "action": "link",
+  "url": "index.html",
+  "target": "_self"
+}

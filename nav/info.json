@@ -1,0 +1,7 @@
+{
+  "id": "nav-info",
+  "text": "Info",
+  "action": "link",
+  "url": "info.html",
+  "target": "_self"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "project-ermia",
+  "style": {
+    "backgroundVideo": "VIDEO/ermia_menu.mp4",
+    "padding": "100px 20px",
+    "minHeight": "120vh",
+    "maxWidth": "1200px",
+    "googleFont": "El Messiri",
+    "fontFamily": "'El Messiri', sans-serif"
+  },
+  "layout": {
+    "direction": "row",
+    "alignItems": "center",
+    "justifyContent": "space-between",
+    "gap": "50px",
+    "textAlign": "left"
+  },
+  "header": {
+    "title": "ERMIA",
+    "titleColor": "#ffffff",
+    "titleSize": "9.8rem",
+    "titleWeight": "400"
+  },
+  "content": [
+    {
+      "text": "Dive into a sunless world where the blizzard rages with eternal frost. Help your brother rid himself of the Bloom by fighting in duels and journeying through every region of the Island of the Rising Moon, all the way to the capital itself.",
+      "textColor": "#ddd5eb",
+      "fontSize": "1.1rem",
+      "lineHeight": "2.0"
+    },
+    {
+    "text": "Coming soon...",
+    "gradient": "linear-gradient(180deg, #bafff2 0%, #3c35fc 100%)",
+    "fontSize": "2.8rem",
+    "fontWeight": "800",
+    "textTransform": "uppercase",
+    "letterSpacing": "2px",
+    "lineHeight": "1.2",
+    "marginBottom": "12px"
+  }
+  ],
+  "media": {
+    "type": "image",
+    "url": "IMG/ermialogo.png",
+    "alt": "ERMIA's logo",
+    "borderRadius": "12px",
+    "maxWidth": "500px"
+  }
+}

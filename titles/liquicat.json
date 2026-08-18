@@ -1,0 +1,33 @@
+{
+  "id": "liquicat",
+  "style": {
+    "googleFont": "DynaPuff",
+    "fontFamily": "'DynaPuff', monospace",
+    "background": "url('IMG/BG-liquicat.jpg') center/cover no-repeat",
+    "padding": "60px 20px",
+    "minHeight": "450px",
+    "maxWidth": "1100px"
+  },
+  "layout": {
+    "direction": "column",
+    "alignItems": "center",
+    "justifyContent": "space-between",
+    "gap": "40px",
+    "textAlign": "center"
+  },
+  "buttons": {
+    "overlay": false,
+    "label": "Available on:",
+    "labelColor": "#ffffff",
+    "labelFontSize": "1.1rem",
+    "labelTextShadow": "0 2px 6px rgba(0, 0, 0, 0.9)",
+    "items": [
+      {
+        "ariaLabel": "Itch io",
+        "icon": "fab fa-itch-io",
+        "url": "https://the-drayn.itch.io/liquicat",
+        "className": "social-btn"
+      }
+    ]
+  }
+}

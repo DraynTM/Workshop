@@ -1,0 +1,65 @@
+{
+  "id": "fso",
+  "style": {
+    "googleFont": "Oswald",
+    "fontFamily": "'Oswald', sans-serif",
+    "background": "linear-gradient(to bottom, rgba(15,17,23,0.85) 0%, rgba(15,17,23,0.2) 20%, rgba(15,17,23,0.2) 80%, rgba(15,17,23,0.85) 100%), url('IMG/BG-fso.png') center/cover no-repeat",
+    "padding": "60px 40px",
+    "minHeight": "550px",
+    "maxWidth": "1100px",
+    "borderRadius": "0px",
+    "border": "0px solid rgba(255, 255, 255, 0.12)",
+    "boxShadow": "0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.1)"
+  },
+  "layout": {
+    "direction": "column",
+    "alignItems": "center",
+    "justifyContent": "center",
+    "gap": "28px",
+    "textAlign": "center"
+  },
+  "header": {
+    "title": "FNAF SIMULATOR: ORIGINS",
+    "titleColor": "#FFFFFF",
+    "titleSize": "clamp(3.5rem, 8vw, 7.5rem)",
+    "titleWeight": "900",
+    "letterSpacing": "6px",
+    "textShadow": "0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 255, 255, 0.2)"
+  },
+  "tags": [
+    {
+      "text": "Here you can buy and play for animatronics from the fnaf game universe not only! You will also be able to play and for the animatronics, made by fans... Wait... YOU CAN ALSO PLAY AS CHARACTERS FROM YOUR FAVORITE VIDEO GAMES! Have fun! And remember that Fazbear Entertainment is about entertainment, pizza and family!",
+      "bg": "rgba(0, 0, 0, 0.75)",
+      "color": "#FFFFFF",
+      "fontSize": "1.0rem",
+      "lineHeight": "1.6",
+      "padding": "20px 28px",
+      "borderRadius": "0px",
+      "maxWidth": "1800px",
+      "border": "0px solid rgba(255, 255, 255, 0.08)",
+      "backdropFilter": "blur(30px)"
+    }
+  ],
+  "buttons": {
+    "overlay": true,
+    "label": "Available on:",
+    "labelColor": "#ffffff",
+    "labelFontSize": "1.1rem",
+    "labelTextShadow": "0 2px 6px rgba(0, 0, 0, 0.9)",
+    "items": [
+      {
+        "ariaLabel": "Itch io",
+        "icon": "fab fa-itch-io",
+        "url": "https://the-drayn.itch.io/fnafso",
+        "className": "social-btn"
+      },
+      {
+        "ariaLabel": "Game Jolt",
+        "icon": "fas fa-bolt",
+        "imageUrl": "https://s.gjcdn.net/img/favicon.png",
+        "url": "https://gamejolt.com/games/fnafso/552329",
+        "className": "social-btn"
+      }
+    ]
+  }
+}

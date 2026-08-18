@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drayn's Workshop</title>
+
+  <link rel="icon" type="image/png" href="IMG/logoTDD.png">
+  <link rel="apple-touch-icon" href="IMG/logoTDD.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="top-nav">
+    <img src="IMG/logoTDD.png" alt="Drayn's Workshop" class="nav-logo">
+    <div class="top-nav-inner" id="top-nav-inner"></div>
+  </nav>
+
+  <main id="workshop-container"></main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span class="footer-copy">Drayn © 2026</span>
+      <button type="button" class="footer-email" id="footer-email" data-email="drayndeveloperbusiness@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span class="footer-email-text">drayndeveloperbusiness@gmail.com</span>
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="nav-config.js"></script>
+  <script>
+    const BLOCK_SOURCES = [
+      'titles/about.json',
+      'titles/ermia.json',
+      'titles/liquicat.json',
+      'titles/ghostly.json',
+      'titles/revengeance.json',
+      'titles/sandbox.json',
+      'titles/fso.json'
+    ];
+
+    loadWorkshopBlocks(BLOCK_SOURCES);
+  </script>
+</body>
+</html>

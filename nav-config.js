@@ -1,7 +1,6 @@
 const NAV_SOURCES = [
   'nav/home.json',
-  'nav/info.json',
-  'nav/wastelands.json'
+  'nav/info.json'
 ];
 
 

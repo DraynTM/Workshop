@@ -447,6 +447,11 @@ function createBlockElement(data) {
     contentDiv.appendChild(bubbleDiv);
   }
 
+  if (data.wikiSearch && typeof createWikiSearchElement === 'function') {
+    const wikiSearchEl = createWikiSearchElement(data.wikiSearch);
+    if (wikiSearchEl) contentDiv.appendChild(wikiSearchEl);
+  }
+
   if (data.buttons) {
     const isObjectForm = !Array.isArray(data.buttons) && typeof data.buttons === 'object';
     const buttonsList = isObjectForm ? data.buttons.items : data.buttons;

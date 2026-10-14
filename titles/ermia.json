@@ -2,7 +2,7 @@
   "id": "project-ermia",
   "style": {
     "backgroundVideo": "VIDEO/ermia_menu.mp4",
-    "padding": "100px 20px",
+    "padding": "110px 20px",
     "minHeight": "120vh",
     "maxWidth": "1200px",
     "googleFont": "El Messiri",

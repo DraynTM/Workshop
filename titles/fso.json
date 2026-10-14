@@ -40,6 +40,12 @@
       "backdropFilter": "blur(30px)"
     }
   ],
+  "wikiSearch": {
+    "baseUrl": "https://the-fnaf-simulator-origins.fandom.com",
+    "placeholder": "SEARCH THE FAN WIKI",
+    "label": "Wiki search",
+    "maxResults": 8
+  },
   "buttons": {
     "overlay": true,
     "label": "Available on:",

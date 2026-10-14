@@ -1,3 +1,4 @@
+/*  Hello, my dearest no life reader ~3~ */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,37 +7,40 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+:root {
+  --nav-h: 76px;
 }
 
 body {
   font-family: system-ui, -apple-system, sans-serif;
-  color: #333;
+  color: #FFFFFF;
   line-height: 1.6;
-  background-color: #0f1117;
+  background-color: #000000;
   overflow-x: hidden;
 }
 
-/*  Top nav  */
+/*  Top nav */
 
 .top-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 76px;
+  height: var(--nav-h);
   z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0 24px;
   overflow: hidden;
-
-  background-image: url('IMG/HEADER.png');
+  background-color: rgba(0, 0, 0, 1.0);
   background-size: cover;
   background-position: center 35%;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 44px rgba(0, 0, 0, 1.0);
 }
-
 .top-nav::before {
   content: '';
   position: absolute;
@@ -46,9 +50,11 @@ body {
 }
 
 .nav-logo {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
-  height: 40px;
+  height: 88px;
   width: auto;
   object-fit: contain;
 }
@@ -77,20 +83,21 @@ body {
   color: #fde3cc;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
 
-  background-image: url('IMG/textbox2.png');
-  background-size: 100% 100%;
+  background-image: url('IMG/textbox.png');
+  background-size: 100% 70%;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
   border: none;
   cursor: pointer;
 
+  filter: invert(1);
   transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 .nav-btn:hover {
   transform: translateY(-1px) scale(1.03);
-  filter: brightness(1.15);
+  filter: invert(1) brightness(1.15);
 }
 
 .nav-btn:active {
@@ -103,7 +110,44 @@ body {
 }
 
 #workshop-container {
-  padding-top: 76px;
+  padding-top: var(--nav-h);
+}
+
+/*  Nav socials (no one will press this buttons)  */
+
+.nav-socials {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: auto;
+}
+
+.nav-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-social:hover {
+  opacity: 1;
+  transform: translateY(-1px) scale(1.15);
+}
+
+.nav-social:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+  border-radius: 6px;
 }
 
 /*  Block shell  */
@@ -207,7 +251,7 @@ body {
   display: block;
 }
 
-/*  Body text  */
+/*  Something i guess  */
 
 .block-text {
   color: #ccc;
@@ -216,8 +260,6 @@ body {
 .block-text:not(:last-child) {
   margin-bottom: 14px;
 }
-
-/*  Tags / info pills  */
 
 .tags-container {
   display: flex;
@@ -235,6 +277,8 @@ body {
   font-size: 0.95rem;
   line-height: 1.5;
   color: #fff;
+
+
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 999px;
@@ -262,7 +306,7 @@ body {
   transform: none;
 }
 
-/*  Speech bubble  */
+/*  Speech   */
 
 .speech-bubble {
   position: relative;
@@ -302,7 +346,7 @@ body {
   word-wrap: break-word;
 }
 
-/*  Screenshot gallery  */
+/*  Screenshots  */
 
 .gallery {
   width: 100%;
@@ -385,7 +429,7 @@ body {
   color: #999;
 }
 
-/*  Buttons  */
+/*  Some Buttons i think  */
 
 .buttons-container {
   display: flex;
@@ -480,7 +524,7 @@ body {
   object-fit: contain;
 }
 
-/*  Footer  */
+/*  Footer ~3~ */
 
 .site-footer {
   width: 100%;
@@ -498,8 +542,8 @@ body {
   justify-content: space-between;
   gap: 12px;
   padding-top: 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  color: #777;
+  border-top: 1px solid rgba(0, 0, 0, 0.00);
+  color: #FFFFFF;
   font-size: 0.85rem;
 }
 
@@ -509,90 +553,399 @@ body {
   gap: 8px;
   background: none;
   border: none;
-  color: #aaa;
+  color: #FFFFFF;
   font-family: inherit;
   font-size: 0.85rem;
   cursor: pointer;
   padding: 6px 10px;
-  border-radius: 8px;
-  transition: color 0.2s ease, background 0.2s ease;
+  border-radius: 88px;
+  transition: color 0.4s ease, background 0.2s ease;
 }
 
 .footer-email:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.06);
+  color: #000000;
+  background: rgba(255, 255, 255, 1.00);
 }
 
 .footer-email.copied {
-  color: #7cffb2;
+  color: #000000;
 }
 
 
-a:focus-visible,
-.btn-link:focus-visible,
-.social-btn:focus-visible,
-.footer-email:focus-visible,
-.gallery-nav:focus-visible,
-.gallery-dot:focus-visible {
-  outline: 2px solid #fff;
-  outline-offset: 3px;
+/*  Wiki ~w~  */
+
+.wiki-search {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
+.wiki-search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.wiki-search-icon {
+  position: absolute;
+  left: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+  transition: color 0.2s ease;
+}
+
+.wiki-search-input {
+  width: 100%;
+  padding: 14px 20px 14px 46px;
+  font-family: inherit;
+  font-size: 1.05rem;
+  color: #ffffff;
+  background-image: url('IMG/Textbox.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 999px;
+  outline: none;
+  transition: opacity 0.2s ease;
+}
+
+.wiki-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s ease;
+}
+
+.wiki-search-input:hover,
+.wiki-search-input:focus {
+  border: none;
+  outline: none;
+}
+
+.wiki-search-results {
+  list-style: none;
+  margin-top: 6px;
+  max-height: 320px;
+  overflow-y: auto;
+  background: #000000;
+  border: none;
+  border-radius: 16px;
+}
+
+.wiki-search-results[hidden] {
+  display: none;
+}
+
+.wiki-search-results li a {
+  display: block;
+  padding: 11px 18px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.wiki-search-results li a:hover,
+.wiki-search-results li.is-active a {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.wiki-search-results li.wiki-search-all a {
+  font-size: 0.85rem;
+  color: #ccc;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.wiki-search-msg {
+  padding: 11px 18px;
+  color: #ccc;
+}
+
+.wiki-search-input:focus-visible {
+  outline: none;
+}
+
+
+/*  Info  (I'm so tired of dis..)*/
+
+body.page-info {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+body.page-info::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, #000 100%),
+    url('IMG/HEADER.png') center / cover no-repeat;
+  pointer-events: none;
+}
+
+.info-page {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--nav-h) + 40px) 24px 40px;
+}
+
+.info-card {
+  width: 100%;
+  max-width: 620px;
+  font-family: 'El Messiri', system-ui, -apple-system, sans-serif;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.95), 0 0 14px rgba(0, 0, 0, 0.8);
+  animation: info-in 0.7s ease both;
+}
+
+@keyframes info-in {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.info-card h1 {
+  margin-bottom: 18px;
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #ffffff;
+  text-wrap: balance;
+}
+
+.info-card p {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #e6e6e6;
+  line-height: 1.6;
+}
+
+.info-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+
+@media (max-width: 1024px) {
+  :root {
+    --nav-h: 100px;
   }
-  .workshop-block,
-  .tag-item,
-  .btn-link,
-  .social-btn,
-  .gallery-nav,
-  .gallery-dot {
-    transition: none !important;
-    transform: none !important;
-    opacity: 1 !important;
+
+  .top-nav {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    row-gap: 4px;
+    padding: 6px 12px;
+  }
+
+  .nav-logo {
+    position: static;
+    transform: none;
+    order: 1;
+    display: block;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 44px;
+    object-fit: contain;
+  }
+
+  .nav-socials {
+    order: 2;
+    gap: 0;
+    margin-right: 0;
+  }
+
+  .nav-social {
+    width: 34px;
+    height: 40px;
+    font-size: 1.15rem;
+  }
+
+  .top-nav-inner {
+    order: 3;
+    flex-wrap: nowrap;
+    gap: 6px;
+    margin-left: auto;
+  }
+
+  .nav-btn {
+    min-width: 0;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 0.9rem;
   }
 }
-
-
 
 @media (max-width: 768px) {
-  .top-nav {
-    height: 64px;
-    padding: 0 14px;
+  .workshop-block {
+    padding: 48px 16px !important;
+    background-attachment: scroll !important;
   }
-  #workshop-container {
-    padding-top: 64px;
-  }
-  .nav-logo {
-    height: 32px;
-  }
-  .nav-btn {
-    padding: 12px 24px;
-    font-size: 0.92rem;
-    min-width: 110px;
-  }
+
   .block-inner {
     flex-direction: column !important;
-    text-align: center !important;
-    padding-bottom: 110px;
+    align-items: stretch !important;
+    gap: 24px !important;
   }
-  .tags-container,
-  .buttons-container {
-    justify-content: center !important;
-  }
-  .speech-bubble {
-    margin: 16px auto;
-  }
+
+  .block-content,
   .block-media {
-    order: -1;
+    flex: none;
+    width: 100%;
+    min-width: 0;
   }
+
+  .block-media img,
+  .block-media video {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .block-header h2 {
+    font-size: clamp(1.9rem, 9vw, 2.8rem) !important;
+    overflow-wrap: anywhere;
+  }
+
+  .block-header-image {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .block-text {
+    overflow-wrap: break-word;
+  }
+
+  .workshop-block.has-buttons-bar {
+    flex-direction: column !important;
+    padding-bottom: 0 !important;
+  }
+
+  .workshop-block.has-buttons-bar .block-inner {
+    padding-bottom: 0;
+  }
+
+  .buttons-section {
+    position: relative;
+    margin-top: 24px;
+    padding: 20px 8px 24px;
+  }
+
+  .buttons-container {
+    gap: 10px;
+  }
+
+  .btn-link {
+    min-height: 44px;
+    padding: 10px 18px;
+  }
+
+  .tags-container {
+    gap: 8px;
+  }
+
+  .tag-item {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+  }
+
+  .tag-item--image {
+    font-size: 1.1rem;
+  }
+
   .gallery {
     max-width: 100%;
   }
+
+  .gallery-nav {
+    width: 44px;
+    height: 44px;
+  }
+
+  .gallery-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .speech-bubble {
+    max-width: 100%;
+  }
+
+  .wiki-search {
+    max-width: 100%;
+  }
+
+  .wiki-search-input {
+    font-size: 16px; 
+  }
+
+  .wiki-search-results li a {
+    padding: 14px 18px;
+  }
+
+  .info-page {
+    align-items: flex-start;
+    padding: calc(var(--nav-h) + 28px) 16px 32px;
+  }
+
+  .site-footer {
+    padding: 0 16px 28px;
+  }
+
   .site-footer-inner {
+    flex-direction: column;
     justify-content: center;
     text-align: center;
+    gap: 8px;
+  }
+
+  .footer-email {
+    min-height: 40px;
   }
 }
 
+@media (max-width: 560px) {
+  :root {
+    --nav-h: 88px;
+  }
+
+  .nav-logo {
+    height: 36px;
+  }
+
+  .nav-social {
+    width: 29px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .top-nav-inner {
+    gap: 4px;
+  }
+
+  .nav-btn {
+    height: 36px;
+    padding: 0 10px;
+    font-size: 0.8rem;
+    gap: 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  .workshop-block {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .info-card { animation: none; }
+}
+/*  Touch some grass pls */

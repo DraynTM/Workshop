@@ -80,8 +80,8 @@ body {
   font-weight: 800;
   font-size: 1.05rem;
   white-space: nowrap;
-  color: #fde3cc;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+  color: #000000;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 
   background-image: url('IMG/Textbox-white.png');
   background-size: 100% 70%;
